@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1></h1>
+    <script>
+
+        let x = [0, 1, 2]
+        let y = [0, 1, 2]
+        // 物件型別長的一樣實際也都不一樣
+
+        // console.log('x=y???', x == y)
+        const myName = 'Alex';
+        console.log('myName:', myName);
+        console.log('typeof:', typeof myName);
+
+        const myGreet = "Hello";
+        console.log(myGreet + " " + myName);
+
+        const myh1 = document.querySelector('h1')
+        myh1.innerHTML = myGreet + " " + myName
+
+        const newStringUsingBacktick = `${myGreet}, I'm ${myName}.`;
+        myh1.innerHTML = newStringUsingBacktick
+
+
+        let variable = null;
+        // null念法=no
+        console.log('variable', variable);
+
+        if (variable) {
+            console.log('true');
+        }
+        else {
+            console.log('false');
+        }
+    </script>
+</body>
+
+</html>
